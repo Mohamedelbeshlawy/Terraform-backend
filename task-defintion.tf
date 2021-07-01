@@ -8,8 +8,8 @@ resource "aws_ecs_task_definition" "my_first_task" {
       "essential": true,
       "portMappings": [
         {
-          "containerPort": 8000,
-          "hostPort": 8000
+          "containerPort": 3001,
+          "hostPort": 3001
         }
       ],
       "memory": 512,
