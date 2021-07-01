@@ -1,6 +1,6 @@
 resource "aws_lb_target_group" "target_group" {
   name        = "backend-target-group"
-  port        = 8000
+  port        = 3001
   protocol    = "HTTP"
   target_type = "ip"
   vpc_id      = "${aws_default_vpc.default_vpc.id}" # Referencing the default VPC
